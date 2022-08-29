@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -27,8 +29,14 @@ class MyApp extends StatelessWidget {
                     // it is hid under the first container
                     "Flutter Developer I am a good person",
                   ),
-                  Container(height: 150, width: 150, color: Colors.green),
-                  Container(height: 130, width: 130, color: Colors.teal),
+                  Container(
+                      height: 150,
+                      width: 150,
+                      color: Colors.green.withOpacity(.4)),
+                  Container(
+                      height: 130,
+                      width: 130,
+                      color: Colors.teal.withOpacity(.3)),
                   Container(height: 120, width: 120, color: Colors.amber),
                   const Text("Shahzain Ahmed"),
                   const Positioned(
